@@ -9,6 +9,7 @@ from rest_framework import status
 CREATE_USER_URL = reverse('user:create')
 TOKEN_URL = reverse('user:token')
 
+
 def create_user(**params):
     """Helper function to create new user"""
     return get_user_model().objects.create_user(**params)
